@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant</title>
+        <style>
+            body{
+                background-color: lightyellow;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                margin-bottom: 20px;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+                top: 0%;
+            }
+
+            li{
+                float: left;
+                margin-left: 22px;
+                align-content: center;
+                border: 1px solid #ffbc0d;
+                height: 50px;
+                width: 275px;
+                text-align:center;
+                border-radius: 8px;
+                background-color: #ffbc0d;
+                cursor: pointer;
+            }
+
+            li a{
+                display: block;
+                color: black;
+                padding-top: 7px;
+                font-size: xx-large;
+            }
+
+            #Mainimg{
+                margin: 0%;
+                margin-left: 20px;
+                border: 2px solid #ffbc0d;
+                border-radius: 5px;
+            }
+
+            .container {
+                position: relative;
+                text-align: center;
+                color: black;
+                float: left;
+            }
+
+            .Queen {
+                position: absolute;
+                top: 30px;
+                left: 50px;
+                font-family: Arial;
+                font-weight: bolder;
+                font-size: 70px;
+                color: #ffbc0d;
+                text-shadow: 2px 2px 5px black;
+            }
+
+            .SubHead{
+                position: absolute;
+                top: 110px;
+                left: 60px;
+                font-family: Arial;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+
+            .Tacosimage{
+                position: relative;
+                text-align: center;
+                float: right;
+            }
+
+            #Tacos{
+                margin-right: 20px;
+                border: 2px solid #ffbc0d;
+                border-radius: 5px;
+            }
+
+            .TacosPrice{
+                position: absolute;
+                font-weight: bolder;
+                font-size: 30px;
+                top: 12px;
+                left: 350px;
+            }
+
+            .BeerImage{
+                position: relative;
+                text-align: center;
+                float: right;
+            }
+
+            #Beer{
+                margin-right: 20px;
+                border: 2px solid #ffbc0d;
+                border-radius: 5px;
+            }
+
+            .BeerPrice{
+                position: absolute;
+                font-weight: bolder;
+                font-size: 30px;
+                top: 12px;
+                left: 350px;
+            }
+
+            .Menu{
+                margin-left: 0%;
+                padding: 10px;
+                list-style-type: none;
+                background-color: white;
+                top: 0%;
+            }
+
+            .MenuList{
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                align-content: center;
+                border: 1px solid #ffbc0d;
+                height: 180px;
+                width: 272px;
+                text-align:center;
+                border-radius: 8px;
+                background-color: #ffbc0d;
+                cursor: pointer;
+            }
+
+            .MenuItems{
+                display: block;
+                color: black;
+                padding-top: 7px;
+                font-size: xx-large;
+            }
+
+            #Div{
+                position: relative;
+                float: left;
+                background-color: lightyellow;
+                margin-top: 20px;
+                margin-left: 30px;
+                height: 440px;
+                width: 1450px;
+                border: 1px solid #ffbc0d;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #Pizzaimg{
+                position: relative;
+                height: 400px;
+                width: 700px;
+                margin-left: 20px;
+                margin-top: 15px;
+                border: 5px solid #ffbc0d;
+                border-radius: 8px;
+            }
+
+            #Mozerella{
+                position: absolute;
+                top: 40px;
+                right: 190px;
+                font-family: Arial;
+                font-weight: bolder;
+                font-size: 70px;
+                color: #ffbc0d;
+                text-shadow: 2px 2px 5px black;
+            }
+
+            #MozerellaSub{
+                position: absolute;
+                top: 180px;
+                right: 35px;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            #LearnMore{
+                background-color: #ffbc0d;
+                border-color: #ffbc0d;
+                border-radius: 15px;
+                height: 40px;
+                width: 120px;
+                position: absolute;
+                bottom: 110px;
+                right: 590px;
+                cursor: pointer;
+            }
+
+            #InstantDiv{
+                float: left;
+                margin-top: 10px;
+                border-radius: 10px;
+                height: 70px;
+                width: 1460px;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                background-color: #ffbc0d;
+            }
+
+            #InstantGames{
+                margin: 0%;
+                text-align: center;
+                margin-top: 10px;
+                font-weight: bolder;
+                font-size: 50px;
+            }
+            
+            .GamesImg{
+                border: 2px solid #ffbc0d;
+                border-radius: 5px;
+            }
+
+            #Bottom_div{
+                float: left;
+                height: 180px;
+                width:100%;
+                margin-top: 10px;
+                background-color: #ffbc0d;
+                border-radius: 10px;
+            }
+
+            #tacos_div{
+                float:left;
+                height: 150px;
+                width: 50%;
+                margin-top: 20px;
+                font-size: 28px;
+            }
+            #Tacos_text{
+                margin: 0%;
+                margin-left: 150px;
+            }
+            #Img_div{
+                display: inline-block;
+                height: 150px;
+                width: 49%;
+                margin-top: 20px;
+            }
+            #Bottom_img{
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a>Tacos</a></li>
+            <li><a>Beers</a></li>
+            <li><a>Wines</a></li>
+            <li><a>Deserts</a></li>
+            <li><a>Reservations</a></li>
+        </ul>
+
+        <div class="container">
+            <img id="Mainimg" src="https://wallpaper.dog/large/20483368.jpg" alt="" height="500px" width="1000px">
+            <div class="Queen">QueenFisher</div>
+            <div class="SubHead">The Queen of Good Times...</div>
+        </div>
+
+        <div class="Tacosimage">
+            <img id="Tacos" src="https://img.taste.com.au/U1RiNwMs/taste/2021/05/birria-tacos-171189-2.jpg" alt="" height="245px" width="430px">
+            <div class="TacosPrice">$1.99</div>
+        </div>
+
+        <div class="BeerImage">
+            <img id="Beer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGf8A4bkdBupMEUH7Olnh-kwysixXoFgz-w&usqp=CAU" alt="" height="248px" width="430px">
+            <div class="BeerPrice">$3.99</div>
+        </div>
+
+        <span>
+        <ol class="Menu">
+            <li class="MenuList">
+                <a class="MenuItems">
+                    Tacos<br>
+                    <p style="font-size: 20px;">a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling.</p>
+                </a>
+            </li>
+            <li class="MenuList">
+                <a class="MenuItems">
+                    Beer<br>
+                    <p style="font-size: 20px;"> Beer is an alcoholic beverage produced by extracting raw materials with water, boiling (usually with hops), and fermenting.</p>
+                </a>
+            </li>
+            <li class="MenuList">
+                <a class="MenuItems">
+                    Wine<br>
+                    <p style="font-size: 20px;">an alcoholic drink typically made from fermented grapes.</p>
+                </a>
+            </li>
+            <li class="MenuList">
+                <a class="MenuItems">
+                    Pizza<br>
+                    <p style="font-size: 20px;">is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various</p>
+                </a>
+            </li>
+            <li class="MenuList">
+                <a class="MenuItems">
+                    Burger<br>
+                    <p style="font-size: 20px;">A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.</p>
+                </a>
+            </li>
+        </ol>
+    </span>
+
+    <div id="Div">
+        <img id="Pizzaimg" src="https://img.freepik.com/premium-photo/hot-pizza-slice-with-dripping-mozzarella-cheese_34936-425.jpg" alt="Pizza Image">
+        <div>
+            <p id="Mozerella">Mozerella Pizza</p>
+            <p id="MozerellaSub">It is high in water content and low in fat. With its smooth, pliable texture and unique<br> flavour, it is any pizza's bestie.Mozzarella can also be used in kinds of pasta, salads and<br> sandwiches.</p>
+            <button id="LearnMore">Learn More</button>
+        </div>
+    </div>
+
+    <div id="InstantDiv">
+        <p id="InstantGames">Instant Games</p>
+    </div>
+
+    <div style="float: left; margin-left: 30px; height: fit-content;">
+        <img class="GamesImg" src="https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?k=20&m=1206323282&s=612x612&w=0&h=yatlq6BHRCCvoTzFZLSwaJc0O8Quct_tRPWtH0dj9Fc=" alt="" height="200px" width="400px">
+        <img style="margin-left: 20px;" class="GamesImg" src="https://media.istockphoto.com/photos/delicious-vegetarian-pizza-on-white-picture-id1192094401?k=20&m=1192094401&s=612x612&w=0&h=jesvXuPyvqM36GQ5QEvJrL3QZjK6YKsziUUF3ZbW0gw=" alt="" height="200px" width="400px">
+        <img style="margin-left: 20px;" class="GamesImg" src="https://img.freepik.com/free-photo/traditional-mexican-tacos-with-meat-vegetables-isolated-white-background_123827-19909.jpg?w=2000" alt="" height="200px" width="400px">
+        <img style="margin-top: 10px;" class="GamesImg" src="https://thumbs.dreamstime.com/b/desserts-11009899.jpg" alt="" height="200px" width="400px">
+        <img style="margin-top: 10px; margin-left: 20px;" class="GamesImg" src="https://media.istockphoto.com/photos/delicious-panna-cotta-with-berries-picture-id182026106?k=20&m=182026106&s=612x612&w=0&h=-12CnyO0be_A88616ir0fAWV4Y6ay0WDzquv2crWSNU=" alt="" height="200px" width="400px">
+    </div>
+
+    <div id="Bottom_div">
+        <div id="tacos_div">
+           <p id="Tacos_text">
+               Tacos<br> Beer<br> Desert <br> Reservation
+           </p>
+        </div>
+        <div id="Img_div">
+            <img id="Bottom_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6InvEX2qaMV6lgNcf4h6S5t9iN_8CTODydQ&usqp=CAU" alt="" height="150px" width="500px">
+        </div>
+    </div>
+
+    </body>
+</html>
