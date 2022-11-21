@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex02</title>
+        <style>
+            #Header_Div{
+                background-color: lime;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #Header{
+                margin: 0%;
+                font-size: xxx-large;
+            }
+            #Main_Div{
+                display: flex;
+            }
+            #Sidebar_Div{
+                flex-grow: 1;
+                background-color: slategray;
+            }
+            .Sidebar_Items{
+                text-align: center;
+                color: white;
+                font-size: larger;
+            }
+            .Sidebar_Items:hover{
+                color: tomato;
+            }
+            #Main_Img_Div{
+                flex-grow: 4;
+            }
+            .Img_Div{
+                background-color: yellow;
+                display: flex;
+            }
+            .Img{
+                background-color: tomato;
+                border-radius: 5px;
+                flex-grow: 1;
+                padding: 70px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="Header_Div">
+                <p id="Header">Header</p>
+            </div>
+            <div id="Main_Div">
+                <div id="Main_Img_Div">
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                </div>
+                <div id="Sidebar_Div">
+                    <p class="Sidebar_Items">WhatsApp</p>
+                    <hr>
+                    <p class="Sidebar_Items">Instagram</p>
+                    <hr>
+                    <p class="Sidebar_Items">Facebook</p>
+                    <hr>
+                    <p class="Sidebar_Items">Twitter</p>
+                    <hr>
+                </div>
+                
+            </div>
+        </section>
+    </body>
+</html>
