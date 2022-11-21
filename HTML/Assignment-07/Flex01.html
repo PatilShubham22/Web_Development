@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex01</title>
+        <style>
+            #Header_Div{
+                background-color: lime;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #Header{
+                margin: 0%;
+                font-size: xxx-large;
+            }
+            #Main_Div{
+                display: flex;
+            }
+            #Sidebar_Div{
+                background-color: slategray;
+                flex-grow: 1;
+            }
+            .Sidebar_Items{
+                text-align: center;
+            }
+            #Main_Img_Div{
+                flex-grow: 4;
+            }
+            .Img_Div{
+                background-color: cadetblue;
+                display: flex;
+            }
+            .Img{
+                background-color: blueviolet;
+                flex-grow: 1;
+                padding: 65px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="Header_Div">
+                <p id="Header">Header</p>
+            </div>
+            <div id="Main_Div">
+                <div id="Sidebar_Div">
+                    <p class="Sidebar_Items">Instagram</p>
+                    <p class="Sidebar_Items">Facebook</p>
+                    <p class="Sidebar_Items">WhatsApp</p>
+                    <p class="Sidebar_Items">Twitter</p>
+                </div>
+                <div id="Main_Img_Div">
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                    <div class="Img_Div">
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                        <div class="Img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
