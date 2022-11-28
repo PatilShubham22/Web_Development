@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex03</title>
+        <style>
+            section{
+                background-color: turquoise;
+            }
+            #Header_Div{
+                background-color: green;
+                padding: 15px;
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+            }
+            #Header{
+                font-size: 40px;
+                margin: 0%;
+            }
+            #Main_Div{
+                display: flex;
+                
+            }
+            .Three_Div{
+                background-color: orangered;
+                padding: 150px;
+                margin: 4px;
+                border-radius: 5px;
+            }
+            #Bottom_Div{
+                display: flex;
+            }
+            #Left_Div{
+                flex-grow: 1;
+            }
+            #Right_Div{
+                flex-grow: 1;
+            }
+            .Img{
+                background-color: tomato;
+                border-radius: 10px;
+                padding: 50px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="Header_Div">
+                <p id="Header">
+                    Header
+                </p>
+            </div>
+            <div id="Main_Div">
+                <div class="Three_Div"></div>
+                <div class="Three_Div" style="flex-grow: 5;"></div>
+                <div class="Three_Div"></div>
+            </div>
+            <div id="Bottom_Div">
+                <div id="Left_Div">
+                    <div class="Img"></div>
+                    <div class="Img"></div>
+                    <div class="Img"></div>
+                </div>
+                <div id="Right_Div">
+                    <div class="Img"></div>
+                    <div class="Img"></div>
+                    <div class="Img"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
