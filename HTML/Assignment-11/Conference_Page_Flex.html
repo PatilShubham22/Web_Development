@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page Flex</title>
+        <style>
+            #Styles_Div{
+                background-color: #333;
+                display: flex;
+            }
+            #Styles{
+                flex-grow: 3;
+                display: flex;
+                justify-content: center;
+            }
+            #Styles_Text{
+                color: white;
+                font-size: 80px;
+                padding: 0%;
+            }
+            #Date_Div{
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            #Conference_Div{
+                flex-grow: 2;
+                display: flex;
+                align-items: flex-end;
+            }
+            #Conference{
+                color: white;
+                margin: 0%;
+                padding-left: 20px;
+                font-size: larger;
+            }
+            #Home_Div{
+                flex-grow: 1;
+                display: flex;
+                margin: 0%;
+            }
+            .Home{
+                color: white;
+                margin: 5px;
+                padding-left: 23px;
+                font-size: larger;
+            }
+            #Main_Lorem_Div{
+                background-color: #333;
+                display: flex;
+                flex-direction: column;
+            }
+            #Lorem_Div{
+                display: flex;
+                justify-content: center;
+            }
+            #Lorem{
+                color: white;
+                font-size: larger;
+            }
+            #Button_Div{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            #Button{
+                padding: 10px;
+                font-size:xx-large;
+            }
+            #Table_Div{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            .Row{
+                margin: 10px;
+            }
+            .Data{
+                margin: 10px;
+            }
+            #Bottom_Div{
+                background-color: #333;
+                display: flex;
+                
+            }
+            #Bottom_Styles_Div{
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+            }
+            #Bottom_Styles_Text{
+                font-size: xxx-large;
+                color: white;
+            }
+            #Bottom_Home_Div{
+                flex-grow: 1;
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+            }
+            .Bottom_Home{
+                font-size: larger;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="Main_Div">
+                <div id="Styles_Div">
+                    <div id="Styles">
+                        <p id="Styles_Text">Styles<br>Conference</p>
+                    </div>
+                    <div id="Date_Div">
+                        <div id="Conference_Div">
+                            <p id="Conference">Conference Date and Time, Venue</p>
+                        </div>
+                        <div id="Home_Div">
+                            <p class="Home">Home</p>
+                            <p class="Home">About Us</p>
+                            <p class="Home">Career</p>
+                            <p class="Home">Contact Us</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Main_Lorem_Div">
+                    <div id="Lorem_Div">
+                        <p id="Lorem">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab omnis necessitatibus et rem illo hic voluptatem <BR>harum rerum, obcaecati eius aliquam corporis pariatur ut tempore repellendus. Iure, quidem modi?Lorem ipsum<br> dolor sit amet consectetur adipisicing elit. Qui laudantium quas officia consequatur praesentium laborum, est<br> doloremque nobis, saepe et officiis veritatis ratione, maxime facere deserunt! Facilis provident et ipsum!
+                        </p>
+                    </div>
+                    <div id="Button_Div">
+                        <Button id="Button">REGISTER NOW</Button>
+                    </div>
+                </div>
+            </div>
+            <div id="Table_Div">
+                <table>
+                    <tr class="Row">
+                        <th class="Data"><h3>Speakers</h3></th>
+                        <th class="Data"><h3>Schedule</h3></th>
+                        <th class="Data"><h3>Venue</h3></th>
+                    </tr>
+                    <tr class="Row">
+                        <td>
+                            <img src="../../Assets/C Language.png" alt="" height="300px" width="330px">
+                        </td>
+                        <td>
+                            <img src="../../Assets/C Language.png" alt="" height="300px" width="330px">
+                        </td>
+                        <td>
+                            <img src="../../Assets/C Language.png" alt="" height="300px" width="330px">
+                        </td>
+                    </tr>
+                    <tr class="Row">
+                        <th>World Class Speakers</th>
+                        <th>Three Inspring Days</th>
+                        <th>The Venue</th>
+                    </tr>
+                    <tr class="Row">
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                            elit. Recusandae impedit perferendis nesciunt optio,<br>
+                            sequi magnam corrupti molestias cupiditate quasi<br>
+                            qui provident aliquam blanditiis nobis nam aut cum.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                            elit. Recusandae impedit perferendis nesciunt optio,<br>
+                            sequi magnam corrupti molestias cupiditate quasi<br>
+                            qui provident aliquam blanditiis nobis nam aut cum.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing<br>
+                            elit. Recusandae impedit perferendis nesciunt optio,<br>
+                            sequi magnam corrupti molestias cupiditate quasi<br>
+                            qui provident aliquam blanditiis nobis nam aut cum.</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Bottom_Div">
+                <div id="Bottom_Styles_Div">
+                    <p id="Bottom_Styles_Text">Styles Conference</p>
+                </div>
+                <div id="Bottom_Home_Div">
+                    <p class="Bottom_Home">Home</p>
+                    <p class="Bottom_Home">About Us</p>
+                    <p class="Bottom_Home">Career</p>
+                    <p class="Bottom_Home">Contact Us</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
