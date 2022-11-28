@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex04</title>
+        <style>
+            #Header_Div{
+                background-color: green;
+                color: white;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            #Header{
+                margin: 0%;
+                font-size: xxx-large;
+            }
+            #Nav_Div{
+                background-color: thistle;
+                display: flex;
+                justify-content: end;
+                padding-left: 300px;
+            }
+            .Link{
+                background-color: orangered;
+                color: white;
+                border-radius: 10px;
+                flex-grow: 1;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+            }
+            #Main_Div{
+                display: flex;
+            }
+            #Sidebar_Div{
+                background-color: slategray;
+                flex-grow: 2;
+            }
+            #Main_Img_Div{
+                flex-grow: 4;
+            }
+            .Sidebar_Items{
+                text-align: center;
+                color: white;
+                font-size: larger;
+            }
+            .Sidebar_Items:hover{
+                color: tomato;
+            }
+            #Product_Div1{
+                background-color: turquoise;
+                display: flex;
+                color: white;
+                justify-content: space-around;
+                font-size:x-large;
+            }
+            #product_Div{
+                background-color: turquoise;
+                display: flex;
+                justify-content: space-around;
+            }
+            .Img{
+                background-color: tomato;
+                padding: 120px;
+                margin: 5px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="Header_Div">
+                <p id="Header">Header</p>
+            </div>
+            <div id="Nav_Div">
+                <a class="Link" href="">Link 1</a>
+                <a class="Link" href="">Link 2</a>
+                <a class="Link" href="">Link 3</a>
+                <a class="Link" href="">Link 4</a>
+            </div>
+            <div id="Main_Div">
+                <div id="Sidebar_Div">
+                    <p class="Sidebar_Items">Whatsapp</p><hr>
+                    <p class="Sidebar_Items">Facebook</p><hr>
+                    <p class="Sidebar_Items">Instagram</p><hr>
+                    <p class="Sidebar_Items">Twitter</p><hr>
+                </div>
+                <div id="Main_Img_Div">
+                    <div id="Product_Div1">
+                        <p style="margin: 1%;">Product 1</p>
+                        <p style="margin: 1%;">Product 2</p>
+                        <p style="margin: 1%;">Product 3</p>
+                    </div>
+                    <div id="product_Div">
+                        <div class="Product">
+                            <div class="Img"></div>
+                            <div class="Img"></div>
+                        </div>
+                        <div class="Product">
+                            <div class="Img"></div>
+                            <div class="Img"></div>
+                        </div>
+                        <div class="Product">
+                            <div class="Img"></div>
+                            <div class="Img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
